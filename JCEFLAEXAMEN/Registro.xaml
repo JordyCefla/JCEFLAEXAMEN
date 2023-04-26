@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JCEFLAEXAMEN.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    
+
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Usuario conectado:"  FontSize="15"  Grid.Row="0" Grid.Column="0"/>
+
+                <Entry x:Name="txtUser" FontSize="15"  Placeholder=""  Grid.Row="0" Grid.Column="1" />
+
+                <Label Text="Registro"  FontSize="30"  Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Nombre"  FontSize="20"  Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtNombre1"  Placeholder="Nombre"  Grid.Row="2" Grid.Column="1" />
+                <Label Text="Monto Inicial"  FontSize="20"   Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtMonto"  Placeholder="Monto Inicial" Grid.Row="3" Grid.Column="1"  />
+                <Label Text="Pago Mensual"  FontSize="20"   Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtMensual"  Placeholder="Pago Mensual" Grid.Row="4" Grid.Column="1" IsEnabled="False"/>
+                <Entry x:Name="txtTotal" IsVisible="false" Placeholder="" Grid.Row="7" Grid.Column="0" />
+
+                <Button x:Name="btnCalcul" Text="Calcular" Clicked="btnCalcul_Clicked" Grid.Row="5" Grid.Column="0"/>
+                <Button x:Name="btnGuardar" Text=" Guardar" Clicked="btnGuardar_Clicked"  Grid.Row="5" Grid.Column="1"/>
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
